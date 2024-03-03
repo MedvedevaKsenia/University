@@ -8,15 +8,14 @@ public class _Main {
         String nameTeacher = "Terry";
         String nameUniversity = "UrFU";
 
-        University university = new University();
+        University university = new University(nameUniversity);
         Teacher teacher = new Teacher(nameTeacher);
         Student student = new Student(nameStudent);
 
-
-        student.laze();
-        teacher.SetName(nameTeacher);
-        teacher.learn();
         teacher.eat();
+        teacher.learn();
+        student.sleep();
+        student.eat();
 
         Educative educative = new Teacher(nameTeacher);
         educative.educate();
@@ -26,8 +25,10 @@ public class _Main {
 
         Lively lively = new Teacher(nameTeacher);
         lively.eat();
+        lively.learn();
+
         lively = new Student(nameStudent);
         lively.sleep();
-
+        lively.learn();
     }
 }

@@ -17,21 +17,21 @@ public class Teacher implements Educative, Lively {
 
     @Override
     public void educate() {
-        System.out.println(name + " learns student");
+        System.out.println("Teacher " + name + " learns student");
     }
 
     @Override
     public void sleep() {
-        System.out.println(name + " sleeps");
+        System.out.println("Teacher " + name + " sleeps");
     }
 
     @Override
     public void eat() {
-        System.out.println(name + " eats");
+        System.out.println("Teacher " + name + " eats");
     }
 
     @Override
     public void learn() {
-        System.out.println(name + " learns too");
+        System.out.println("Teacher " + name + " learns too");
     }
 }

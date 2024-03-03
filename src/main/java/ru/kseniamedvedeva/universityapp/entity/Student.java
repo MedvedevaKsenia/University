@@ -15,23 +15,23 @@ public class Student implements Lively, Lazily {
         this.name = name;
     }
 
-     @Override
+    @Override
     public void laze() {
-        System.out.println(name + " is a student and he's lazy");
+        System.out.println("Student " + name + " laze");
     }
 
     @Override
     public void learn() {
-        System.out.println(name + " sometimes learns");
+        System.out.println("Student " + name + " sometimes learns");
     }
 
     @Override
     public void sleep() {
-        System.out.println(name + " rarely sleeps");
+        System.out.println("Student " + name + " sleeps");
     }
 
     @Override
     public void eat() {
-        System.out.println(name + " eats snakes");
+        System.out.println("Student " + name + " eats snakes");
     }
 }
