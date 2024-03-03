@@ -1,5 +1,9 @@
 package ru.kseniamedvedeva.universityapp.entity;
 
-public interface Sleeper {
+public interface Lively {
     void sleep();
+
+    void eat();
+
+    void learn();
 }

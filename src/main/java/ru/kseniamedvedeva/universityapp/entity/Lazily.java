@@ -1,5 +1,5 @@
 package ru.kseniamedvedeva.universityapp.entity;
 
-public interface Learner {
-    void learn();
+public interface Lazily {
+    void laze();
 }
