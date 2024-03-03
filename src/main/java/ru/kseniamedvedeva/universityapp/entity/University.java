@@ -1,5 +1,5 @@
 package ru.kseniamedvedeva.universityapp.entity;
 
 public class University {
-    String teacher, student;
+  // учитель и студент этого университета  String teacher, student;
 }
