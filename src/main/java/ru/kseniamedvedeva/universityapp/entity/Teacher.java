@@ -3,6 +3,10 @@ package ru.kseniamedvedeva.universityapp.entity;
 public class Teacher implements Educative, Lively {
     private String name;
 
+    public Teacher(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }

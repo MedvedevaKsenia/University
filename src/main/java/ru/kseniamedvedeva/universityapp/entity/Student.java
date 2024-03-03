@@ -3,6 +3,10 @@ package ru.kseniamedvedeva.universityapp.entity;
 public class Student implements Lively, Lazily {
     private String name;
 
+    public Student(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -11,7 +15,7 @@ public class Student implements Lively, Lazily {
         this.name = name;
     }
 
-    @Override
+     @Override
     public void laze() {
         System.out.println(name + " is a student and he's lazy");
     }

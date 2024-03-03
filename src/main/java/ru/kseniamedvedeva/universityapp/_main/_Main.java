@@ -4,27 +4,29 @@ import ru.kseniamedvedeva.universityapp.entity.*;
 
 public class _Main {
     public static void main(String[] args) {
-        Student student = new Student();
-        Teacher teacher = new Teacher();
         String nameStudent = "Max";
         String nameTeacher = "Terry";
+        String nameUniversity = "UrFU";
+
+        University university = new University();
+        Teacher teacher = new Teacher(nameTeacher);
+        Student student = new Student(nameStudent);
 
 
-        student.SetName(nameStudent);
         student.laze();
         teacher.SetName(nameTeacher);
         teacher.learn();
         teacher.eat();
 
-        Educative educative = new Teacher();
+        Educative educative = new Teacher(nameTeacher);
         educative.educate();
 
-        Lazily lazily = new Student();
+        Lazily lazily = new Student(nameStudent);
         lazily.laze();
 
-        Lively lively = new Teacher();
+        Lively lively = new Teacher(nameTeacher);
         lively.eat();
-        lively = new Student();
+        lively = new Student(nameStudent);
         lively.sleep();
 
     }

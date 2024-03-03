@@ -1,5 +1,13 @@
 package ru.kseniamedvedeva.universityapp.entity;
 
 public class University {
-    String nameUniversity;
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void SetName(String name) {
+        this.name = name;
+    }
 }
